@@ -27,11 +27,11 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/whoami", (req, res)=> {
-let ip = req.ip
+let ipaddress = req.ip
 let language = req.headers["accept-language"];
 let software =  req.headers['user-agent'] 
 
-res.json({ip, language, software})
+res.json({ipaddress, language, software})
 })
 
 
